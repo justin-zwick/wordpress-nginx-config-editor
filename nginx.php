@@ -12,7 +12,7 @@ namespace O10n;
  * @wordpress-plugin
  * Plugin Name:       Nginx Config Editor
  * Description:       Advanced Nginx config editor for optimization purposes.
- * Version:           0.0.1
+ * Version:           0.0.2
  * Author:            Optimization.Team
  * Author URI:        https://optimization.team/
  * GitHub Plugin URI: https://github.com/o10n-x/wordpress-nginx-editor
@@ -30,7 +30,7 @@ if (defined('WP_INSTALLING') && WP_INSTALLING) {
 }
 
 // settings
-$module_version = '0.0.1';
+$module_version = '0.0.2';
 $minimum_core_version = '0.0.48';
 $plugin_path = dirname(__FILE__);
 
