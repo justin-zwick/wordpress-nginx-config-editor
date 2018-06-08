@@ -37,7 +37,8 @@ class AdminViewNginx extends AdminViewBase
             'file',
             'options',
             'AdminClient',
-            'AdminScreen'
+            'AdminScreen',
+            'AdminNginx'
         ));
     }
     
@@ -79,14 +80,7 @@ class AdminViewNginx extends AdminViewBase
      */
     final public function help_tab()
     {
-        $data = array(
-            'name' => __('Nginx config Editor', 'o10n'),
-            'github' => 'https://github.com/o10n-x/wordpress-nginx-config-editor',
-            'wordpress' => 'https://wordpress.org/support/plugin/nginx-config-editor',
-            'docs' => 'https://github.com/o10n-x/wordpress-nginx-config-editor/tree/master/docs'
-        );
-
-        return $data;
+        return $this->AdminNginx->help_tab();
     }
 
     /**
