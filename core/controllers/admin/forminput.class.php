@@ -242,6 +242,11 @@ class AdminForminput extends Controller implements Controller_Interface
                         $input = ($input) ? $this->json->parse($input, (($type === 'json') ? false : true)) : (($type === 'json') ? json_decode('{}') : array());
                     }
                 break;
+                case "newline_array":
+                    if (is_string($input)) {
+                        $input = ($input) ? $this->newline_array($input) : array();
+                    }
+                break;
                 case "bool":
                     return ($input) ? true : false;
                 break;

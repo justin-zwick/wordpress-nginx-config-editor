@@ -1402,7 +1402,7 @@ class Cache extends Controller implements Controller_Interface
             }
         }
 
-        $params['return'] = $return_url;
+        $params['return'] = urlencode($return_url);
 
         return wp_nonce_url(add_query_arg($params, admin_url('admin.php')), 'flush', 'flush');
     }
